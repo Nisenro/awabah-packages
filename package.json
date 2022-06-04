@@ -1,13 +1,13 @@
 {
     "name": "awabah-packages",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "description": "",
     "main": "index.js",
     "keywords": [],
     "author": "Oluwabukola Tina",
     "license": "ISC",
     "scripts": {
-        "dev": "node src/index.js"
+        "dev": "node index.js"
     },
     "bugs": {
         "url": "https://github.com/awabah-engineering/awabah-packages/issues"

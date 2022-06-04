@@ -20,5 +20,5 @@ function formatPhoneNumberToContainCountryCode(phoneNumber) {
     }
     return `+234${phoneNumber}`;
 }
-
+// console.log(formatPhoneNumberToContainCountryCode("0900"))
 module.exports = formatPhoneNumberToContainCountryCode

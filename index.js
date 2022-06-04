@@ -1,6 +1,4 @@
-// exports.formatPhoneNumberToContainCountryCode = function() {
 function formatPhoneNumberToContainCountryCode(phoneNumber) {
-    console.log("This is a message from the demo package");
 
     function replaceValue(str, newValue, oldValue) {
         return str.replace(newValue, oldValue);
@@ -30,3 +28,8 @@ function formatPhoneNumberToContainCountryCode(phoneNumber) {
     }
     return `+234${phoneNumber}`;
 }
+
+
+function ch() { console.log('ok'); return 'bye' }
+
+module.exports = { formatPhoneNumberToContainCountryCode, ch }

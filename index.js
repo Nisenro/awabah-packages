@@ -30,7 +30,3 @@ module.exports = function formatPhoneNumberToContainCountryCode(string) {
     }
     return `+234${phoneNumber}`;
 }
-
-function checkPhoneNumber(phoneNumber) {
-
-}

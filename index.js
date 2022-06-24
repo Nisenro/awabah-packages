@@ -1,24 +1,12 @@
-function formatPhoneNumberToContainCountryCode(phoneNumber) {
-    function replaceValue(str, newValue, oldValue) {
-        return str.replace(newValue, oldValue);
-    }
-    if (phoneNumber.startsWith('+2340')) {
-        return `${replaceValue(phoneNumber, '+2340', '+234')}`;
-    }
-    if (phoneNumber.startsWith('2340')) {
-        return `${replaceValue(phoneNumber, '2340', '+234')}`;
-    }
-    if (phoneNumber.startsWith('+0')) {
-        return `${replaceValue(phoneNumber, '+0', '+234')}`;
-    }
-    if (phoneNumber.startsWith('234')) {
-        return `${replaceValue(phoneNumber, '234', '+234')}`;
-    }
+const titleCase = require('./title-case');
 
-    if (phoneNumber.startsWith('0')) {
-        return `${replaceValue(phoneNumber, '0', '+234')}`;
-    }
-    return `+234${phoneNumber}`;
-}
-// console.log(formatPhoneNumberToContainCountryCode("0900"))
-module.exports = formatPhoneNumberToContainCountryCode
+module.exports = {
+    findUserInModelQuery: require('./find-user-in-model-query'),
+    formatPhoneNumberToContainCountryCode: require('./format-phone-number-to-contain-country-code'),
+    genderInWord: require('./gender-in-word'),
+    splitValue: require('./split-value'),
+    trimString: require('./trim-string'),
+    mergeTwoObjects: require('./merge-two-object'),
+    lowerCase: require('./lower-case'),
+    titleCase: require('./title-case')
+};

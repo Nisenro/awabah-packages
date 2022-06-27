@@ -8,5 +8,6 @@ module.exports = {
     trimString: require('./trim-string'),
     mergeTwoObjects: require('./merge-two-object'),
     lowerCase: require('./lower-case'),
-    titleCase: require('./title-case')
+    titleCase: require('./title-case'),
+    slugify: require('./slugify')
 };

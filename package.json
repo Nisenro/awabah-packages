@@ -12,5 +12,8 @@
     "bugs": {
         "url": "https://github.com/awabah-engineering/awabah-packages/issues"
     },
-    "homepage": "https://github.com/awabah-engineering/awabah-packages#readme"
+    "homepage": "https://github.com/awabah-engineering/awabah-packages#readme",
+    "dependencies": {
+        "publish": "^0.6.0"
+    }
 }

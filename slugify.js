@@ -1,3 +1,3 @@
 module.exports = function(param, separator, join) {
-    return param.split(separator).join(join);
+    return param.toLowerCase().split(separator).join(join);
 }

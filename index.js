@@ -1,4 +1,3 @@
-const titleCase = require('./title-case');
 
 module.exports = {
     findUserInModelQuery: require('./find-user-in-model-query'),
@@ -9,5 +8,5 @@ module.exports = {
     mergeTwoObjects: require('./merge-two-object'),
     lowerCase: require('./lower-case'),
     titleCase: require('./title-case'),
-    slugify: require('./slugify')
+    slugify: require('./slugify'),
 };

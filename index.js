@@ -1,4 +1,3 @@
-
 module.exports = {
     findUserInModelQuery: require('./find-user-in-model-query'),
     formatPhoneNumberToContainCountryCode: require('./format-phone-number-to-contain-country-code'),
@@ -8,5 +7,7 @@ module.exports = {
     mergeTwoObjects: require('./merge-two-object'),
     lowerCase: require('./lower-case'),
     titleCase: require('./title-case'),
+    processingCharges: require('./processing-charges'),
+
     slugify: require('./slugify'),
 };

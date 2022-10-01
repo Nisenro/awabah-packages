@@ -1,4 +1,4 @@
-import Dinero from "dinero.js";
+const Dinero = require('dinero.js');
 
 const localProcessingLowerfee = Dinero({
     amount: 20,

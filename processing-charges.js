@@ -32,7 +32,7 @@ module.exports = function (amount) {
     precision: 4,
   });
 
-  if (!/^[0-9]*$/.test(amount.toString())) {
+  if (!numberOnlyRegex.test(amount.toString())) {
     return {
       totalFee,
       awabahProcessingFee,
@@ -49,7 +49,7 @@ module.exports = function (amount) {
     currency: "NGN",
     precision: 4,
   });
-  const paystackProcessingFee = formattedAmount.percentage(
+  let paystackProcessingFee = formattedAmount.percentage(
     paystackPercentageCharge,
     "HALF_EVEN"
   );
@@ -78,6 +78,7 @@ module.exports = function (amount) {
   ) {
     totalProcessingFee = localProcessingHigherfee.add(paystackProcessingLimit);
     awabahProcessingFee = localProcessingHigherfee;
+    paystackProcessingFee = paystackProcessingLimit;
   }
 
   totalFee = formattedAmount.add(totalProcessingFee);

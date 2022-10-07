@@ -32,7 +32,7 @@ module.exports = function (amount) {
     precision: 4,
   });
 
-  if (!numberOnlyRegex.test(amount.toString())) {
+  if (!/^[0-9]*$/.test(amount.toString())) {
     return {
       totalFee,
       awabahProcessingFee,

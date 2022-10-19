@@ -2,6 +2,8 @@
 
 A List of local packages used across all Awabah products and repositories.
 
+[NPM URL](https://www.npmjs.com/package/awabah-packages)
+
 ## Installation
 
 ```bash
